@@ -1,0 +1,18 @@
+<ion-content>
+  <div class="quizzes-page">
+    <div class="information" [routerLink]="['/informations']">
+      <img src="../../assets/icon/info.png" alt="" />
+    </div>
+
+    <img class="dragon-img" src="../../assets/icon/dragon.png" alt="" />
+    <p class="welcome-msg">Quiz Arc Saiyen</p>
+
+    <ion-button
+      color="warning"
+      *ngFor="let quiz of quizzes"
+      (click)="goTo('quiz', quiz)"
+    >
+      Quiz {{ quiz }}
+    </ion-button>
+  </div>
+</ion-content>

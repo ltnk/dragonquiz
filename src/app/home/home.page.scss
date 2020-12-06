@@ -1,0 +1,36 @@
+ion-content {
+  padding: 0;
+  --background: rgb(27, 102, 65);
+  .quizzes-page {
+    background-color: rgb(27, 102, 65);
+    padding: 20px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    .information {
+      text-align: right;
+      img {
+        width: 25px;
+      }
+    }
+    .dragon-img {
+      width: 150px;
+      margin: 10px auto;
+    }
+    .welcome-msg {
+      padding: 0;
+      margin: 0;
+      color: white;
+      font-family: "Luckiest Guy", cursive;
+    }
+
+    ion-button {
+      width: 80%;
+      height: 60px;
+      margin: 15px;
+      font-family: "Luckiest Guy", cursive;
+    }
+  }
+}

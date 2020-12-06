@@ -1,0 +1,61 @@
+ion-content {
+  padding: 0;
+  height: 100%;
+  --background: rgb(255, 229, 113);
+  .quiz-page {
+    background-color: rgb(255, 229, 113);
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+
+    .home-btn {
+      width: 25px;
+    }
+
+    .all-question {
+      text-align: center;
+
+      .dragon-img {
+        width: 70px;
+        margin: 10px auto;
+      }
+
+      .question-text {
+        font-family: "Luckiest Guy", cursive;
+      }
+
+      ion-button {
+        padding: 5px;
+        width: 80%;
+        height: 60px;
+        margin: 15px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .response-container {
+        background-color: rgba($color: #ffae51, $alpha: 1);
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        width: 80%;
+        min-height: 70px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+        .response {
+          margin: 0 auto !important;
+          padding: 5px;
+          p {
+            text-align: center;
+          }
+        }
+      }
+      .response-container:active {
+        background-color: rgba($color: #eca049, $alpha: 1);
+        width: 78%;
+      }
+    }
+  }
+}

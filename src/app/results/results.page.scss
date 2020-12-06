@@ -1,0 +1,36 @@
+ion-content {
+  padding: 0;
+  --background: rgb(255, 229, 113);
+  .results-page {
+    background-color: rgb(255, 229, 113);
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+
+    .result {
+      height: 70%;
+      .dragon-img {
+        width: 100px;
+        margin: 20px auto;
+      }
+
+      .dragon-ball {
+        width: 50px;
+        margin: 20px auto;
+      }
+
+      h3 {
+        margin: 20px;
+        font-family: "Luckiest Guy", cursive;
+      }
+    }
+
+    ion-button {
+      width: 80%;
+      height: 60px;
+      margin: 15px;
+    }
+  }
+}

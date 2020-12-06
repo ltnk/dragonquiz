@@ -1,0 +1,58 @@
+<ion-content>
+  <div class="quiz-page">
+    <img
+      src="../../assets/icon/home.png"
+      alt=""
+      class="home-btn"
+      (click)="goBack('home')"
+    />
+
+    <div class="all-question">
+      <img src="../../assets/icon/dragon3.png" alt="" class="dragon-img" />
+      <p>Question {{currentQuestionNumber+1}} / {{questions.length}}</p>
+      <p class="question-text">{{currentQuestion}}</p>
+
+      <div
+        class="response-container"
+        color="tertiary"
+        (click)="goToNextQuestion(currentRep1)"
+      >
+        <div class="response">
+          <p>{{currentRep1}}</p>
+        </div>
+      </div>
+
+      <div
+        class="response-container"
+        color="tertiary"
+        (click)="goToNextQuestion(currentRep2)"
+      >
+        <div class="response">
+          <p>{{currentRep2}}</p>
+        </div>
+      </div>
+
+      <div
+        class="response-container"
+        color="tertiary"
+        (click)="goToNextQuestion(currentRep3)"
+      >
+        <div class="response">
+          <p>{{currentRep3}}</p>
+        </div>
+      </div>
+
+      <div
+        class="response-container"
+        color="tertiary"
+        (click)="goToNextQuestion(currentRep4)"
+      >
+        <div class="response">
+          <p>{{currentRep4}}</p>
+        </div>
+      </div>
+
+      <!-- <p>La bonne réponse est : {{ currentCorrectAnswer }}</p> -->
+    </div>
+  </div>
+</ion-content>

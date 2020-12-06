@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="results-page">
+    <div class="result">
+      <h3>Votre résultat</h3>
+      <p>{{ correctAnswerNumber }} / 10</p>
+
+      <img src="../../assets/icon/dragon4.png" alt="" class="dragon-img" />
+      <p *ngIf="correctAnswerNumber<=3">Pas terrible comme score !</p>
+      <p *ngIf="correctAnswerNumber===4">Encore un petit effort !</p>
+      <p *ngIf="correctAnswerNumber===5">Pile la moyenne !</p>
+      <p *ngIf="correctAnswerNumber===6">Pas mal, mais tu peux mieux faire !</p>
+      <p *ngIf="correctAnswerNumber===7">Pas mal du tout !</p>
+      <p *ngIf="correctAnswerNumber===8">Trop bien !</p>
+      <p *ngIf="correctAnswerNumber===9">Ouah presque parfait !</p>
+      <p *ngIf="correctAnswerNumber==10">
+        La note parfaite ! Tu es un vrai fan !
+      </p>
+    </div>
+
+    <ion-button color="tertiary" [routerLink]="['/home']">Rejouer !</ion-button>
+  </div>
+</ion-content>
